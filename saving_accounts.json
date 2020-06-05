@@ -1,0 +1,10 @@
+[
+{"interest":0.0,"id":"1001","balance":0.0,"isActive":false,"retention":0.0,"clientID":"666","clientType":"Natural","key":"123"},
+{"interest":0.0,"id":"1002","balance":0.0,"isActive":false,"retention":0.0,"clientID":"1233413","clientType":"Natural","key":"12125"},
+{"interest":0.0,"id":"1003","balance":0.0,"isActive":false,"retention":0.0,"clientID":"666","clientType":"Natural","key":"1234"},
+{"interest":0.0,"id":"CVV6","balance":39600.0,"isActive":true,"retention":0.0,"clientID":"1000","clientType":"Natural","key":"1234"},
+{"interest":0.0,"id":"BOF5","balance":40000.0,"isActive":true,"retention":0.0,"clientID":"11","clientType":"Natural","key":"2321"},
+{"interest":0.0,"id":"QWJ7","balance":0.0,"isActive":false,"retention":0.0,"clientID":"3242342342","clientType":"Compañia","key":"1234"},
+{"interest":0.0,"id":"ONX8","balance":30000.0,"isActive":true,"retention":0.0,"clientID":"5325324532","clientType":"Natural","key":"1231"},
+{"interest":0.0,"id":"FKA4","balance":564082.0,"isActive":true,"retention":0.0,"clientID":"666","clientType":"Natural","key":"1233"}
+]

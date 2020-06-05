@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="598.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="starbankapp.InicioController">
+   <children>
+      <Text layoutX="59.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO A STARBANK APP" wrappingWidth="480.35498046875">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="209.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿QUÉ DESEA REALIZAR?" wrappingWidth="181.336669921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonPersona" layoutX="191.0" layoutY="131.0" mnemonicParsing="false" onAction="#botonPersonaNccionado" prefHeight="34.0" prefWidth="103.0" text="Persona" />
+      <Button fx:id="botonCompañia" layoutX="309.0" layoutY="131.0" mnemonicParsing="false" onAction="#botonCompañiaAccionado" prefHeight="34.0" prefWidth="103.0" text="Compañía" />
+      <Button fx:id="botonRetirar" layoutX="248.0" layoutY="292.0" mnemonicParsing="false" onAction="#botonRetirar" prefHeight="34.0" prefWidth="103.0" text="Retirar" />
+      <Text layoutX="234.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREACIÓN CLIENTE" wrappingWidth="132.8917236328125">
+         <font>
+            <Font size="15.0" />
+         </font></Text>
+      <Button fx:id="botonCerrar" layoutX="505.0" layoutY="420.0" mnemonicParsing="false" onAction="#botonCerrar" prefHeight="34.0" prefWidth="78.0" text="Cerrar" />
+      <Text layoutX="228.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPERACIÓN CUENTA" wrappingWidth="144.09173583984375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonConsignar" layoutX="367.0" layoutY="292.0" mnemonicParsing="false" onAction="#botonConsignar" prefHeight="34.0" prefWidth="103.0" text="Consignar" />
+      <Button fx:id="botonActivar" layoutX="192.0" layoutY="379.0" mnemonicParsing="false" onAction="#botonActivar" prefHeight="34.0" prefWidth="103.0" text="Activar" />
+      <Button fx:id="botonDesactivar" layoutX="309.0" layoutY="379.0" mnemonicParsing="false" onAction="#botonDesactivar" prefHeight="34.0" prefWidth="103.0" text="Desactivar" />
+      <Text layoutX="228.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GESTIÓN CUENTA" wrappingWidth="144.09173583984364">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonCuenta" layoutX="248.0" layoutY="217.0" mnemonicParsing="false" onAction="#botonCuenta" prefHeight="34.0" prefWidth="103.0" text="Cuenta" />
+      <Text layoutX="228.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREACIÓN CUENTA" wrappingWidth="144.09173583984364">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonAñadir" layoutX="100.0" layoutY="292.0" mnemonicParsing="false" onAction="#botonAñadir" prefHeight="34.0" prefWidth="133.0" text="Añadir Fondos" />
+   </children>
+</AnchorPane>

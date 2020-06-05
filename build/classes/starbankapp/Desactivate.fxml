@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="starbankapp.DesactivateController">
+   <children>
+      <Text layoutX="105.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESACTIVAR CUENTA">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="cajaTipoCuenta" layoutX="159.0" layoutY="104.0" prefWidth="150.0" />
+      <TextField fx:id="cajaIDCuenta" layoutX="160.0" layoutY="153.0" onKeyTyped="#hileraLetras" />
+      <PasswordField fx:id="cajaClave" layoutX="160.0" layoutY="200.0" onKeyTyped="#hileraNumeros" />
+      <Button fx:id="botonDesactivar" layoutX="159.0" layoutY="250.0" mnemonicParsing="false" onAction="#botonDesactivar" prefHeight="26.0" prefWidth="88.0" text="Desactivar" />
+      <Button fx:id="botonCerrar" layoutX="320.0" layoutY="250.0" mnemonicParsing="false" onAction="#botonCerrar" prefHeight="26.0" prefWidth="57.0" text="Cerrar" />
+      <Text layoutX="21.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO DE CUENTA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NÚMERO CUENTA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLAVE CUENTA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

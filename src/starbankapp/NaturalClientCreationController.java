@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package starbankapp;
 
 import java.net.URL;
@@ -15,14 +11,10 @@ import javafx.scene.control.TextField;
 import Client.NaturalPerson;
 import java.awt.event.KeyEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextFormatter;
-import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import static starbankapp.WithdrawalController.ventanaEmergente;
 
@@ -33,8 +25,6 @@ import static starbankapp.WithdrawalController.ventanaEmergente;
  */
 public class NaturalClientCreationController implements Initializable {
 
-    @FXML
-    private Button botonGuardar;
     @FXML
     private TextField cajaTextoID;
     @FXML

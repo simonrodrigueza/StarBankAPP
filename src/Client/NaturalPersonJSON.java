@@ -1,12 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Client;
 
-import Client.NaturalPerson;
-import Client.Client;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -18,11 +11,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- *
- * @author SIMON
+ * Clase de fabricación pura que se apoya de la API GSON para guardar los
+ * objetos de tipo NaturalPerson en un archivo JSON, implementa JSONCLIENT.
  */
 public class NaturalPersonJSON implements JSONClient {
 
+    /**
+     * Método que lee el JSON y lo deserializa para guardarlo en un ArrayList
+     * con objetos de tipo NaturalPerson.
+     * @return
+     */
     @Override
     public ArrayList<NaturalPerson> readJson() {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson
@@ -61,6 +59,13 @@ public class NaturalPersonJSON implements JSONClient {
         return clientArrayList;
     }
 
+   
+      /**
+     * Toma un objeto de tipo cliente 
+     * y lo añade en un arraylist para ser procesado 
+     * por la API y guardado en el JSON.
+     * @param c
+     */
     @Override
     public void addToJson(Client c) {
 
@@ -101,6 +106,11 @@ public class NaturalPersonJSON implements JSONClient {
         System.out.println("\n" + "Escritura sobre natural_clients.json" + "\n" + json);
     }
 
+     /**
+     * Método que busca un cliente en un arraylist creado
+     * por la API y lo edita para luego volverlo a guardar.
+     * @param c 
+     */
     @Override
     public void editJson(Client c) {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson

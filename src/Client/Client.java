@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Client;
 
-import Account.Account;
-import java.util.ArrayList;
-
-
 /**
- *
- * @author Santiago
+ *Clase abstracta que contiene los datos del cliente.
  */
 public abstract class Client {
     private String id;

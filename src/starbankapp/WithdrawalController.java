@@ -37,10 +37,6 @@ public class WithdrawalController implements Initializable {
     private TextField cajaCantidadRetiro;
     @FXML
     private PasswordField cajaClave;
-    @FXML
-    private Button botonRetiro;
-    @FXML
-    private Button botonCancelar;
 
     /**
      * Initializes the controller class.

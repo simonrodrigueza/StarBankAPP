@@ -12,7 +12,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- *
+ *Corre la aplicación principal mediante el primer FXML que
+ * pregunta por la sucursal donde se encuentra la aplicación.
  * @author SIMON
  */
 public class StarBankApp extends Application {

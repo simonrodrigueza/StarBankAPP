@@ -1,11 +1,6 @@
 package Account;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-import Account.Account;
+
 import Operation.Operation;
 import Operation.OperationManagerJSON;
 import Operation.Withdrawal;
@@ -14,8 +9,8 @@ import java.util.Date;
 import starbankapp.FXMLBranchOfficeController;
 
 /**
- *
- * @author Santiago
+*Cuenta de ahorros que se extiende de la clase Account y contiene
+* las operaciones que se hacen sobre ella.
  */
 public class SavingAccount extends Account {
 
@@ -31,6 +26,14 @@ public class SavingAccount extends Account {
 
     }
 
+    /**
+     * Verifica consignación y la hace en caso de ser correcta.
+     * @param value
+     * @param accountKey
+     * @param destinationID
+     * @param destinationType
+     * @return 
+     */
     @Override
     public boolean consign(double value, String accountKey, String destinationID, String destinationType) {
         if ((this.isActive == false) || !(this.key.equalsIgnoreCase(accountKey)) || (this.balance - value < 10000)) {
@@ -59,6 +62,14 @@ public class SavingAccount extends Account {
 
     }
 
+    
+    /**
+     * Verifica condiciones, realiza el retiro y envía la parte del interés a
+     * la cuenta corriente de la sucursal.
+     * @param value
+     * @param accountKey
+     * @return 
+     */
     @Override
     public boolean withdraw(double value, String accountKey) {
         Withdrawal with = new Withdrawal();
@@ -83,6 +94,11 @@ public class SavingAccount extends Account {
         return true;
     }
 
+    /**
+     * Permite retirar todo el dinero cuando se desactiva la cuenta.
+     * @param accountKey
+     * @return 
+     */
     @Override
     public boolean withdrawRetirement(String accountKey) {
         Withdrawal with = new Withdrawal();
@@ -107,6 +123,12 @@ public class SavingAccount extends Account {
         return true;
     }
 
+   /**
+    * Añade fondos a la cuenta cuando se entrega el dinero físico en el banco.
+    * @param value
+    * @param accountKey
+    * @return 
+    */
     @Override
     public boolean addFounds(double value, String accountKey) {
         if (!(this.key.equalsIgnoreCase(accountKey)) || (this.isActive == false)) {
@@ -124,6 +146,10 @@ public class SavingAccount extends Account {
         return true;
     }
 
+    /**
+     * Genera ID aleatorio alfanumérico sin repetición en su misma clase.
+     * @return 
+     */
     @Override
     protected String generateID() {
         SavingAccountJSON json = new SavingAccountJSON();

@@ -1,12 +1,7 @@
 [
-{"id":"ODC7","balance":200000.0,"isActive":true,"retention":0.0,"clientID":"202020","clientType":"Natural","key":"2212"},
-{"id":"UYT8","balance":200000.0,"isActive":true,"retention":0.0,"clientID":"202020","clientType":"Natural","key":"2212"},
-{"id":"COL8","balance":200000.0,"isActive":true,"retention":0.0,"clientID":"202020","clientType":"Natural","key":"4232"},
-{"id":"RQX5","balance":180000.0,"isActive":true,"retention":0.0,"clientID":"2020","clientType":"Compañia","key":"2323"},
-{"id":"XHS6","balance":650000.0,"isActive":true,"retention":0.0,"clientID":"202020","clientType":"Natural","key":"2212"},
-{"id":"AAA2","balance":388707.16000000003,"isActive":true,"retention":0.0,"clientID":"00000","clientType":"Compañia","key":"3524"},
-{"id":"AAA1","balance":389447.16000000003,"isActive":true,"retention":0.0,"clientID":"00000","clientType":"Compañia","key":"6343"},
-{"id":"UUV9","balance":0.0,"isActive":false,"retention":0.0,"clientID":"3242342342","clientType":"Compañia","key":"1234"},
-{"id":"BVQ10","balance":0.0,"isActive":false,"retention":0.0,"clientID":"1000","clientType":"Natural","key":"1242"},
-{"id":"AAA0","balance":771721.4800000001,"isActive":true,"retention":0.0,"clientID":"00000","clientType":"Compañia","key":"4453"}
+{"id":"AAA1","balance":389447.16000000003,"isActive":true,"clientID":"00000","clientType":"Compañia","key":"6343"},
+{"id":"AAA0","balance":771721.4800000001,"isActive":true,"clientID":"00000","clientType":"Compañia","key":"4453"},
+{"id":"JGD1","balance":20000.0,"isActive":true,"clientID":"5323234324","clientType":"Compañia","key":"2312"},
+{"id":"AAA2","balance":1.738841816E7,"isActive":true,"clientID":"00000","clientType":"Compañia","key":"3524"},
+{"id":"ZCR5","balance":0.0,"isActive":false,"clientID":"4296504222","clientType":"Compañia","key":"1111"}
 ]

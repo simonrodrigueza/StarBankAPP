@@ -1,7 +1,5 @@
 [
-{"nit":"q","companyName":"q","commercialSector":"q","id":"132123123","name":"q","phone":"q","address":"q","ocupation":"q","isSubscribed":false,"numberOfAccounts":0},
-{"nit":"123123","companyName":"wqeqew","commercialSector":"qewqwe","id":"12313223","name":"Simon","phone":"3132313","address":"qcrqwr1","ocupation":"ing","isSubscribed":false,"numberOfAccounts":0},
-{"nit":"asas","companyName":"holitaas","commercialSector":"asdssad","id":"1213123","name":"hola","phone":"14123","address":"cra","ocupation":"sol","isSubscribed":false,"numberOfAccounts":0},
-{"nit":"sdasd","companyName":"asdsad","commercialSector":"adasdas","id":"2020","name":"catar","phone":"30112","address":"asdad","ocupation":"sadasd","isSubscribed":true,"numberOfAccounts":3},
-{"nit":"2131231231","companyName":"dsafsafsafasfsadfasfsafsaf","commercialSector":"asdfsadfasdfsadfsadfsafdsafads","id":"3242342342","name":"safdsdafsafsadfsafsafd","phone":"2313123123","address":"asfasdfasfsafasfasfsafsaf","ocupation":"asfdsafasfsafasfsafsafsaf","isSubscribed":true,"numberOfAccounts":1}
+{"nit":"1234141231","companyName":"Casitasas","commercialSector":"Inmobiliario","id":"1037232323","name":"Carlos Manrique ","phone":"3032121231","address":"Carrera sur","ocupation":"Profesor","isSubscribed":false,"numberOfAccounts":0},
+{"nit":"3121231231","companyName":"Catar SAS","commercialSector":"Textil","id":"5323234324","name":"Catalina Rodriguez","phone":"3042422423","address":"Carrera 23","ocupation":"Diseñadora","isSubscribed":true,"numberOfAccounts":1},
+{"nit":"3133411231","companyName":"Salud SAS","commercialSector":"Salud","id":"4296504222","name":"Ernesto Rodriguez","phone":"3012123849","address":"Calle 23B","ocupation":"Jefe Empresa","isSubscribed":false,"numberOfAccounts":0}
 ]

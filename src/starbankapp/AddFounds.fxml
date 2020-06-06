@@ -39,7 +39,7 @@
       <TextField fx:id="cajaIDCuenta" layoutX="184.0" layoutY="135.0" onKeyTyped="#hileraLetras" />
       <TextField fx:id="cajaCantidad" layoutX="184.0" layoutY="177.0" onKeyTyped="#hileraNumeros" />
       <PasswordField fx:id="cajaClave" layoutX="184.0" layoutY="222.0" onKeyTyped="#hileraNumeros" />
-      <Button fx:id="botonAñadir" layoutX="154.0" layoutY="293.0" mnemonicParsing="false" onAction="#botonAñadir" prefHeight="26.0" prefWidth="74.0" text="Añadir" />
-      <Button fx:id="botoCancelar" layoutX="269.0" layoutY="293.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="26.0" prefWidth="74.0" text="Cancelar" />
+      <Button fx:id="botonAñadir" layoutX="132.0" layoutY="293.0" mnemonicParsing="false" onAction="#botonAñadir" prefHeight="26.0" prefWidth="84.0" text="Añadir" />
+      <Button fx:id="botoCancelar" layoutX="259.0" layoutY="293.0" mnemonicParsing="false" onAction="#botonCancelar" prefHeight="26.0" prefWidth="84.0" text="Cancelar" />
    </children>
 </AnchorPane>

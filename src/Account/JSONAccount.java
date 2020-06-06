@@ -9,7 +9,7 @@ import Account.Account;
 import java.util.ArrayList;
 
 /**
- *
+ *Clase abstracta del manejo del JSON con la cuenta.
  * @author SIMON
  */
 public interface JSONAccount {

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Account;
 
 
@@ -17,10 +13,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- *
- * @author SIMON
+ *Clase manejadora de la API GSON para
+ * realizar serealización y deserialización de datos.
  */
 public class CurrentAccountJSON implements JSONAccount{
+    
+    /**
+     * Lee el JSON y devuelve un arraylist con la info en él
+     * convertido en objetos de la clase.
+     * @return 
+     */
     @Override
     public ArrayList<CurrentAccount> readJson() {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson
@@ -59,6 +61,10 @@ public class CurrentAccountJSON implements JSONAccount{
         return accountArrayList;
     }
 
+    /**
+     * Añade al JSON una nueva cuenta.
+     * @param c 
+     */
     @Override
     public void addToJson(Account c) {
         
@@ -103,6 +109,11 @@ public class CurrentAccountJSON implements JSONAccount{
         System.out.println("\n"+"Escritura sobre current_accounts"+"\n"+json);
     }
     
+   /**
+    * Edita la cuenta que se le envía en el JSON y
+    * vuelve a guardar los datos actualizados.
+    * @param c 
+    */
     @Override
     public void editJson(Account c) {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson

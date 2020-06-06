@@ -19,7 +19,7 @@
       <TextField fx:id="cajaIDCuenta" layoutX="160.0" layoutY="153.0" onKeyTyped="#hileraLetras" />
       <PasswordField fx:id="cajaClave" layoutX="160.0" layoutY="200.0" onKeyTyped="#hileraNumeros" />
       <Button fx:id="botonDesactivar" layoutX="159.0" layoutY="250.0" mnemonicParsing="false" onAction="#botonDesactivar" prefHeight="26.0" prefWidth="88.0" text="Desactivar" />
-      <Button fx:id="botonCerrar" layoutX="320.0" layoutY="250.0" mnemonicParsing="false" onAction="#botonCerrar" prefHeight="26.0" prefWidth="57.0" text="Cerrar" />
+      <Button fx:id="botonCerrar" layoutX="309.0" layoutY="250.0" mnemonicParsing="false" onAction="#botonCerrar" prefHeight="26.0" prefWidth="69.0" text="Cerrar" />
       <Text layoutX="21.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIPO DE CUENTA">
          <font>
             <Font size="15.0" />

@@ -13,16 +13,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
-import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import static starbankapp.WithdrawalController.ventanaEmergente;
 
@@ -49,8 +45,7 @@ public class CompanyClientCreationController implements Initializable {
     private TextField cajaTextoNEmpresa;
     @FXML
     private TextField cajaTextoSector;
-    @FXML
-    private Button botonGuardar;
+
     Cashier cashier = new Cashier();
 
     /**
@@ -62,9 +57,19 @@ public class CompanyClientCreationController implements Initializable {
     }
 
     @FXML
-    public void botonGuardarAccionado(ActionEvent event) {
+    public void botonGuardarAccionado(ActionEvent event) throws Exception {
         if (obtenerDatosEmpresa() != null) {
             cashier.addCompanyClient(obtenerDatosEmpresa());
+            ventanaEmergente("OK", "Cliente creado");
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Inicio.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage1 = new Stage();
+            stage1.setScene(new Scene(root1));
+            stage1.setResizable(false);
+            stage1.show();
+            Node source = (Node) event.getSource();
+            Stage stage = (Stage) source.getScene().getWindow();
+            stage.close();
         }
 
     }
@@ -83,8 +88,9 @@ public class CompanyClientCreationController implements Initializable {
             ventanaEmergente("error", "Campos con menos de 10 dígitos");
             return null;
         }
-        if (nombre.length() < 10 || direc.length() < 10 || ocupa.length() < 10 || nEmpresa.length() < 10 || sector.length() < 10) {
+        if (nombre.length() < 10 || direc.length() < 10 || ocupa.length() < 5 || nEmpresa.length() < 5 || sector.length() < 5) {
             ventanaEmergente("error", "Campos incompletos.");
+            return null;
         }
         Company company = new Company(NIT, nEmpresa, sector, ID, nombre, cel, direc, ocupa, false);
         return company;
@@ -123,7 +129,7 @@ public class CompanyClientCreationController implements Initializable {
                 return change;
             }
         }));
-                cajaTextoNIT.setTextFormatter(new TextFormatter<String>((TextFormatter.Change change) -> {
+        cajaTextoNIT.setTextFormatter(new TextFormatter<String>((TextFormatter.Change change) -> {
             String newText = change.getControlNewText();
             if (newText.length() > 10) {
 
@@ -132,7 +138,7 @@ public class CompanyClientCreationController implements Initializable {
                 return change;
             }
         }));
-        
+
         char car = keyEvent.getCharacter().charAt(0);
         if ((car < '0' || car > '9')) {
             keyEvent.consume();
@@ -160,6 +166,5 @@ public class CompanyClientCreationController implements Initializable {
             keyEvent.consume();
         }
     }
-
 
 }

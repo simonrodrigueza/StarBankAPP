@@ -6,18 +6,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="starbankapp.CompanyClientCreationController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="starbankapp.CompanyClientCreationController">
    <children>
-      <TextField fx:id="cajatTextoID" layoutX="108.0" layoutY="77.0" onKeyTyped="#hileraNumeros" prefHeight="26.0" prefWidth="265.0" />
-      <Text layoutX="14.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="70.80743408203125" />
-      <TextField fx:id="cajaTextoNombre" layoutX="108.0" layoutY="110.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
-      <TextField fx:id="cajaTextoCelular" layoutX="108.0" layoutY="143.0" onKeyTyped="#hileraNumeros" prefHeight="26.0" prefWidth="265.0" />
-      <TextField fx:id="cajaTextoDireccion" layoutX="108.0" layoutY="176.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
-      <TextField fx:id="cajaTextoOcupacion" layoutX="108.0" layoutY="209.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
-      <Text layoutX="14.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" wrappingWidth="70.80743408203125" />
-      <Text layoutX="14.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CELULAR" wrappingWidth="70.80743408203125" />
-      <Text layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIRECCIÓN" wrappingWidth="70.80743408203125" />
-      <Text layoutX="14.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OCUPACIÓN" wrappingWidth="70.80743408203125" />
+      <TextField fx:id="cajatTextoID" layoutX="163.0" layoutY="77.0" onKeyTyped="#hileraNumeros" prefHeight="26.0" prefWidth="265.0" />
+      <Text layoutX="21.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" wrappingWidth="70.80743408203125" />
+      <TextField fx:id="cajaTextoNombre" layoutX="163.0" layoutY="110.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="cajaTextoCelular" layoutX="163.0" layoutY="143.0" onKeyTyped="#hileraNumeros" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="cajaTextoDireccion" layoutX="163.0" layoutY="176.0" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="cajaTextoOcupacion" layoutX="163.0" layoutY="209.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
+      <Text layoutX="21.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" wrappingWidth="70.80743408203125" />
+      <Text layoutX="21.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CELULAR" wrappingWidth="70.80743408203125" />
+      <Text layoutX="21.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIRECCIÓN" wrappingWidth="102.80743408203125" />
+      <Text layoutX="21.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OCUPACIÓN" wrappingWidth="102.80743408203125" />
       <Text fontSmoothingType="LCD" layoutX="85.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creación Cliente Compañía" wrappingWidth="230.93663024902344">
          <font>
             <Font size="19.0" />
@@ -28,12 +28,12 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <TextField fx:id="cajaTextoNIT" layoutX="108.0" layoutY="242.0" onKeyTyped="#hileraNumeros" prefHeight="26.0" prefWidth="265.0" />
-      <TextField fx:id="cajaTextoNEmpresa" layoutX="108.0" layoutY="275.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
-      <TextField fx:id="cajaTextoSector" layoutX="108.0" layoutY="308.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
-      <Text layoutX="14.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIT" wrappingWidth="70.80743408203125" />
-      <Text layoutX="14.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE EMPRESA" wrappingWidth="87.60748291015625" />
-      <Text layoutX="14.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECTOR" wrappingWidth="70.80743408203125" />
+      <TextField fx:id="cajaTextoNIT" layoutX="163.0" layoutY="242.0" onKeyTyped="#hileraNumeros" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="cajaTextoNEmpresa" layoutX="163.0" layoutY="275.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="cajaTextoSector" layoutX="163.0" layoutY="308.0" onKeyTyped="#hileraLetras" prefHeight="26.0" prefWidth="265.0" />
+      <Text layoutX="21.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIT" wrappingWidth="70.80743408203125" />
+      <Text layoutX="17.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE EMPRESA" wrappingWidth="135.60755157470703" />
+      <Text layoutX="21.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECTOR" wrappingWidth="87.60748291015625" />
       <Button fx:id="botonGuardar" layoutX="108.0" layoutY="353.0" mnemonicParsing="false" onAction="#botonGuardarAccionado" text="Guardar">
          <font>
             <Font name="System Bold" size="12.0" />

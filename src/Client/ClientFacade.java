@@ -1,22 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Client;
 
 import java.util.ArrayList;
 
 /**
- *
- * @author SIMON
+ * Clase fachada para el cliente, la cual busca, edita y añade
+ * clientes en el JSON, usa Singleton.
  */
 public class ClientFacade {
 
     JSONClient clientPersist;
     private static ClientFacade clientFacadeInstance;
 
-    //Organizar cuando no lo encuentra.
+   /**
+    * Busca el cliente mediante el id y el tipo y retorna un objeto
+    * de tipo cliente.
+    * @param id
+    * @param clientType
+    * @return 
+    */
     public Client searchClient(String id, String clientType) {
         if (clientType.equalsIgnoreCase("natural")) {
             clientPersist = new NaturalPersonJSON();
@@ -42,6 +44,11 @@ public class ClientFacade {
 
     }
 
+    /**
+     * Añade un objeto tipo cliente al json según sea el caso, persona
+     * natural o compañia.
+     * @param client 
+     */
     public void addClient(Client client) {
         if (client instanceof NaturalPerson) {
             clientPersist = new NaturalPersonJSON();
@@ -53,6 +60,11 @@ public class ClientFacade {
 
     }
 
+    /**
+     * Edita la información del cliente buscado y lo vuelve a 
+     * guardar en el JSON.
+     * @param client 
+     */
     public void editClient(Client client) {
         if (client instanceof NaturalPerson) {
             clientPersist = new NaturalPersonJSON();
@@ -62,10 +74,11 @@ public class ClientFacade {
             clientPersist.editJson(client);
         }
     }
-    public void activateClient(Client client){
-        
-    }
-
+    /**
+     * Método para obtener la instancia 
+     * de la clase (singleton).
+     * @return 
+     */
     public static ClientFacade getInstance() {
         if (clientFacadeInstance == null) {
             clientFacadeInstance = new ClientFacade();

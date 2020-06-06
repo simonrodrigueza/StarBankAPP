@@ -76,5 +76,10 @@
 {"name":"Consignación a cuenta: AAA0","date":"Jun 5, 2020 4:41:14 PM","accountID":"FKA4","typeAccount":"Ahorros","branchOffice":"StarBank Centro"},
 {"name":"Retiro por un total de: 20000.0 más el 2%","date":"Jun 5, 2020 4:41:14 PM","accountID":"FKA4","typeAccount":"Ahorros","branchOffice":"StarBank Centro"},
 {"name":"Consignación a cuenta: AAA0","date":"Jun 5, 2020 4:43:56 PM","accountID":"FKA4","typeAccount":"Ahorros","branchOffice":"StarBank Centro"},
-{"name":"Retiro por un total de: 50000.0 más el 2%","date":"Jun 5, 2020 4:43:56 PM","accountID":"FKA4","typeAccount":"Ahorros","branchOffice":"StarBank Centro"}
+{"name":"Retiro por un total de: 50000.0 más el 2%","date":"Jun 5, 2020 4:43:56 PM","accountID":"FKA4","typeAccount":"Ahorros","branchOffice":"StarBank Centro"},
+{"name":"Consignación a cuenta: JGD1","date":"Jun 5, 2020 11:12:27 PM","accountID":"ZCR5","typeAccount":"Corriente","branchOffice":"StarBank Coltejer"},
+{"name":"Consignación a cuenta: AAA2","date":"Jun 5, 2020 11:13:03 PM","accountID":"ZCR5","typeAccount":"Corriente","branchOffice":"StarBank Coltejer"},
+{"name":"Retiro por un total de: 1000000.0 más el 2%","date":"Jun 5, 2020 11:13:03 PM","accountID":"ZCR5","typeAccount":"Ahorros","branchOffice":"StarBank Coltejer"},
+{"name":"Consignación a cuenta: AAA2","date":"Jun 5, 2020 11:13:19 PM","accountID":"ZCR5","typeAccount":"Corriente","branchOffice":"StarBank Coltejer"},
+{"name":"Desactivación de cuenta por un valor de: 9.82000289E8","date":"Jun 5, 2020 11:13:19 PM","accountID":"ZCR5","typeAccount":"Ahorros","branchOffice":"StarBank Coltejer"}
 ]

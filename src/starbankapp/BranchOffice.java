@@ -1,19 +1,11 @@
 package starbankapp;
 
-    /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-
-import Account.CurrentAccount;
 import java.util.ArrayList;
 
 
 /**
- *
- * @author Santiago
+ * Cuenta de las sucursales precargadas en el sistema.
  */
 public class BranchOffice {
     private String id;
@@ -33,7 +25,10 @@ public class BranchOffice {
         this.city = city;
         this.branchAccountID = branchAccountID;
     }
-    
+    /**
+     * Carga al sistemas las sucursales y sus respectivas cuentas.
+     * @return 
+     */
     public ArrayList createOffices(){
        BranchOffice office0 = new BranchOffice("0","Centro", "StarBank Centro", "Medellín", "AAA0");
        BranchOffice office1 = new BranchOffice("1","Carrera 23A","StarBank Carrera 23A", "Bogotá","AAA1");

@@ -1,15 +1,10 @@
 package Operation;
 
-
-
-
 /**
  *
- * @author Santiago
+ * Clase consignación.
  */
 public class Consignment extends Operation {
-
-    private double value;
 
     public Consignment() {
     }

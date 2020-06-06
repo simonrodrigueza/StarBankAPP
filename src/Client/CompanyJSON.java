@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Client;
 
-import Client.Client;
 import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -17,11 +12,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- *
- * @author SIMON
+ *Clase de fabricación pura que se apoya de la API
+ * GSON para guardar los objetos de tipo Company en 
+ * un archivo JSON, implementa JSONCLIENT.
  */
 public class CompanyJSON implements JSONClient {
 
+    
+    /**
+     * Método que lee el JSON y lo deserializa para 
+     * guardarlo en un ArrayList con objetos
+     * de tipo Company.
+     * @return 
+     */
     @Override
     public ArrayList<Company> readJson() {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson
@@ -61,6 +64,12 @@ public class CompanyJSON implements JSONClient {
 
     }
 
+    /**
+     * Toma un objeto de tipo cliente (company)
+     * y lo añade en un arraylist para ser procesado 
+     * por la API y gurdado en el JSON.
+     * @param o 
+     */
     @Override
     public void addToJson(Client o) {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson
@@ -101,6 +110,11 @@ public class CompanyJSON implements JSONClient {
 
     }
 
+    /**
+     * Método que busca un cliente en un arraylist creado
+     * por la API y lo edita para luego volverlo a guardar.
+     * @param c 
+     */
     @Override
     public void editJson(Client c) {
         Gson gson = new Gson();//Objeto con el cual se implementara la API Gson

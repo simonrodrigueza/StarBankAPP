@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package starbankapp;
 
 import Account.Account;
@@ -13,18 +9,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
-import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import static starbankapp.WithdrawalController.ventanaEmergente;
 
@@ -43,10 +35,7 @@ public class ActivateController implements Initializable {
     private TextField cajaCantidad;
     @FXML
     private PasswordField cajaClave;
-    @FXML
-    private Button botonActivar;
-    @FXML
-    private Button botonCancelar;
+    
 
     /**
      * Initializes the controller class.
